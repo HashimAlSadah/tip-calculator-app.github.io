@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <script src="./main.js" defer></script>
+</head>
+<body>
+
+  <div class="container">
+
+    <header class="header">
+      <img src="./images/logo.svg" alt="website-logo">
+    </header>
+
+    <main class="main">
+      <div class="control">
+  
+        <div class="bill-amount">
+          <h1>Bill</h1>
+          <div class="bill-amount-input">
+            <img src="./images/icon-dollar.svg" alt="Dollar-sign">
+            <input type="text" placeholder="0">
+          </div>
+        </div>
+
+        <div class="select-tip">
+          <h1>Select Tip %</h1>
+          <div class="grid">
+            <div class="button">5%</div>
+            <div class="button">10%</div>
+            <div class="button">15%</div>
+            <div class="button">25%</div>
+            <div class="button">50%</div>
+            <div class="button custome"><input type="text" placeholder="Custome" id="custome-tip"></div>
+          </div>
+        </div>
+
+        <div class="people-count">
+          <header>
+            <h1>Number of People</h1>
+            <p class="people-count-error">Can't be zero</p>
+          </header>
+          
+          <div class="people-count-input">
+            <img src="./images/icon-person.svg" alt="person icon">
+            <input type="text" placeholder="0">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="screen">
+        <div class="tip-amount">
+          <div class="tip-amount-text">
+            <h1>Tip Amount</h1>
+            <p>/person</p>
+          </div>
+          <div class="tip-amount-digit">
+            <p>$0.00</p>
+          </div>
+        </div>
+
+        <div class="total">
+          <div class="total-text">
+            <h1>Total</h1>
+            <p>/person</p>
+          </div>
+          <div class="total-digit">
+            <p>$0.00</p>
+          </div>
+        </div>
+
+        <button id="reset-btn">
+          reset
+        </button>
+      </div>
+
+    </main>
+
+  </div>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/HashimAlSadah">HashimAlSadah</a>.
+  </footer>
+</body>
+</html>
